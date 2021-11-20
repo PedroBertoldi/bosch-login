@@ -1,4 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+.form-login {
+    flex: 1;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    min-width: 250px;
+    max-width: 360px;
+    margin-top: 20px;
+}
+
+.form-login img {
+    align-self: center;
+}
+
+.form-login h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.form-login a {
+    margin-bottom: 5px;
+    color: #1e1ef3;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@import url('fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 html,
 body {
     /* display: flex; */
@@ -8,6 +35,8 @@ body {
     margin: 0;
     font-weight: 400;
     background-color: rgb(243, 242, 239);
+    background-image: url(../Assets/livros2.jpg);
+    background-repeat: repeat;
 }
 
 #livros {

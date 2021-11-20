@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../CSS/common.css">
+    <link rel="stylesheet" href="../CSS/navbar.css">
+    <link rel="stylesheet" href="../CSS/form-input.css">
+    <link rel="icon" href="../Assets/logo.png">
+
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="right" href="../Login/login.html" id="navUser">Entrar</a>
+    </div>
+
+    <div class="container-center">
+        <div class="form-cadastro">
+            <div class="container-linha txt-centro itens-centro">
+                <img src="../assets/logo.jpg" height="50px" width="50px">
+                <h1 class="flex">Cadastro novo usuário</h1>
+            </div>
+
+            <div class="form-input">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <span class="txt-invalid">teste</span>
+            </div>
+
+            <div class="form-input">
+                <label for="email">Email:</label>
+                <input type="email" id="email">
+                <span class="txt-invalid"></span>
+            </div>
+
+            <div class="container-linha">
+                <div class="form-input">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" onkeyup="mascaraNumerosApenas('cpf')">
+                    <span class="txt-invalid"></span>
+                </div>
+
+                <div class="form-input">
+                    <label for="dataNasc">Data de Nascimento:</label>
+                    <input type="date" id="dataNasc">
+                    <span class="txt-invalid"></span>
+                </div>
+            </div>
+
+            <div class="container-linha">
+                <div class="form-input">
+                    <label for="senha">Digite sua senha:</label>
+                    <input type="password" id="senha">
+                    <span class="txt-invalid"></span>
+                </div>
+
+                <div class="form-input">
+                    <label for="senha2">Confirme sua senha:</label>
+                    <input type="password" id="senha2">
+                    <span class="txt-invalid"></span>
+                </div>
+            </div>
+
+            <div class="container-linha">
+                <button id="btnCadastro" onclick="criarConta()" class="btn-primary" type="button">Cadastrar</button>
+                <button id="btnVoltar" onclick="location.href='../login/login.html'" class="btn" type="button">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
