@@ -1,0 +1,30 @@
+.pub{
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    padding: 4px;
+    background-color: #91cbff;
+    border-radius: 8px;
+}
+.pub span{
+    font-weight: bolder;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.publicar{
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+    padding: 4px;
+    background-color: aliceblue;
+    border-radius: 8px;
+    gap: 8px;
+}
+.publicar input{
+    flex: 4;
+    height: 50px;
+    padding: 8px;
+}
+.publicar button{
+    flex: 1;
+}
