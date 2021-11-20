@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+
+        <!-- Resolver esses CSS depois
+        <link rel="stylesheet" href="../CSS/message.css">
+        <link rel="stylesheet" href="../CSS/common.css">
+        <link rel="stylesheet" href="../CSS/navbar.css">
+        <link href="fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        -->
+
+        <link rel="stylesheet" href="../login.css">
+        <link rel="icon" href="../Assets/logo.png">
+        <!-- Resolver esses CSS depois
+        <script src="../JS/data.js"></script>
+        <script src="../JS/formulario.js"></script>
+        <script src="scripts.js"></script>
+        -->
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="../index.html">Livros</a>
+            <a href="../Carrinho/index.html">Carrinho</a>
+            <a class="right active" href="../Login/index.html" id="navUser">Entrar</a>
+        </div>
+
+        <div class="container-center">
+            <div class="form-login">
+                <img src="../Assets/logo.png" height="100px" width="180px">
+                <h2>Por favor, insira suas credenciais</h2>
+                <div class="form-input">
+                    <label for="login">Email:</label>
+                    <input type="text" id="login">
+                    <span class="txt-invalid"></span>
+                </div>
+
+                <div class="form-input">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha">
+                    <span class="txt-invalid"></span>
+                </div>
+
+                <div id="mensagem" class="container-linha message">
+                    <span class="error">Senha invalida</span>
+                </div>
+
+                <a id="link-cadastro">Não possui uma conta?</a>
+                <button class="btn-primary" id="btnEntrar" type="button">Entrar</button>
+            </div>
+        </div>
+    </body>
+</html>
